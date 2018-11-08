@@ -1,14 +1,8 @@
-import pickle
 from django.shortcuts import render
 import json
-
-from django.utils.datastructures import OrderedSet
 from django.views.generic.base import View
 from search.models import IndeedType
 from django.http import HttpResponse
-from datetime import datetime
-from elasticsearch import Elasticsearch
-from django.views.generic.base import RedirectView
 
 # Create your views here.
 class SearchSuggest(View):
